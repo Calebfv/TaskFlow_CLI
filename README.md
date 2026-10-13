@@ -1,11 +1,16 @@
-# ⚡ TaskFlow CLI
+# ⚡ TaskFlow CLI (Case Study)
 
-> **Herramienta en línea de comandos para la automatización de flujos de trabajo, tareas de desarrollo y scripts de sistema.**
+> **🔒 Nota de confidencialidad:** El código fuente de esta herramienta es de carácter privado y propietario. Este repositorio documenta únicamente la arquitectura, el diseño de la interfaz de consola y el caso de uso.
+
+<p align="center">
+  <!-- Aquí subidas y enlazadas tus 2 futuras imágenes de demostración -->
+  <img src="ruta-de-tu-imagen-1.png" width="800" alt="TaskFlow CLI - Vista de Ejecución">
+</p>
 
 ---
 
 ## 🎯 Descripción General
-**TaskFlow CLI** es una utilidad de consola diseñada para acelerar y estandarizar tareas técnicas repetitivas. Permite a desarrolladores y administradores de sistemas ejecutar rutinas de automatización, gestión de respaldos, compilación y preparación de entornos sin la necesidad de intervención manual propenso a errores.
+**TaskFlow CLI** es una utilidad de línea de comandos diseñada para acelerar y estandarizar tareas técnicas repetitivas. Permite a desarrolladores y administradores de sistemas ejecutar rutinas de automatización, gestión de respaldos, compilación y preparación de entornos sin intervención manual propensa a errores.
 
 ---
 
@@ -16,7 +21,7 @@
 
 - **Lenguajes:** Python, Bash, Rust, Node.js
 - **Entorno:** CLI (Command Line Interface), Linux / POSIX Shells
-- **Automatización:** Pipelines de scripting, gestión de procesos y optimización de I/O
+- **Automatización:** Pipelines de scripting y gestión de procesos del sistema
 
 ---
 
@@ -24,22 +29,23 @@
 
 ### 1. Automatización de Flujos (Workflows)
 - Ejecución secuencial y en paralelo de tareas de preparación de proyectos.
-- Normalización de entornos y ejecución de scripts reutilizables.
+- Normalización de entornos y scripts reutilizables.
 
 ### 2. Sincronización y Mantenimiento
 - Respaldos automatizados de archivos de configuración e índices.
-- Verificación de integridad de archivos y limpieza de temporales.
+- Verificación de integridad y limpieza de temporales.
 
-### 3. Rendimiento Optimizado
-- Diseño de consumo mínimo de recursos pensado para integrarse de manera transparente en terminales y scripts.
+<p align="center">
+  <img src="ruta-de-tu-imagen-2.png" width="800" alt="TaskFlow CLI - Reportes y Logs">
+</p>
 
 ---
 
-## 💻 Ejemplo de Uso General
+## 💻 Ejemplo de Sintaxis Conceptual
 
 ```bash
-# Instalación e inicialización del entorno
-taskflow init
+# Inicialización del flujo automatizado
+taskflow init --profile production
 
-# Ejecución de pipeline de automatización predefinido
-taskflow run --target deploy-routine
+# Ejecución del pipeline de despliegue
+taskflow run --target deploy-routine --strict
