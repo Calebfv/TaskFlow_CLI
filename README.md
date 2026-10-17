@@ -59,7 +59,4 @@ Análisis gráfico del pipeline completado en **1.42s sin errores**, desglosando
 - Respaldos automatizados de archivos de configuración e índices.
 - Verificación de integridad y limpieza de temporales.
 
----
 
-## 📩 Contacto y Demostraciones
-Para consultas sobre la arquitectura o solicitar una demostración privada de la herramienta, puedes escribir a **inventiwebcr@gmail.com**.
