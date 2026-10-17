@@ -1,62 +1,60 @@
 # ⚡ TaskFlow CLI (Case Study)
 
-> **🔒 Nota de confidencialidad:** El código fuente de esta herramienta es de carácter privado y propietario. Este repositorio documenta únicamente la arquitectura, el diseño de la interfaz de consola, las métricas de ejecución y el caso de uso.
+> **🔒 Confidentiality Notice:** The source code of this tool is private and proprietary. This repository documents only the architecture, console interface design, execution metrics, and case study.
 
 ---
 
-## 🎯 Descripción General
-**TaskFlow CLI** es una utilidad de línea de comandos diseñada para acelerar y estandarizar tareas técnicas repetitivas. Permite a desarrolladores y administradores de sistemas ejecutar rutinas de automatización, gestión de respaldos, compilación y preparación de entornos sin intervención manual propensa a errores.
+## 🎯 Overview
+**TaskFlow CLI** is a command-line utility designed to accelerate and standardize repetitive technical tasks. It allows developers and system administrators to run automation routines, backup management, compilation, and environment provisioning without error-prone manual intervention.
 
 ---
 
-## 🖥️ Interfaz e Inspección de Ejecución
+## 🖥️ Interface & Execution Inspection
 
-### 1. Consola de Comandos (Terminal CLI)
-Muestra la ejecución directa de la herramienta en **Arch Linux**, destacando la velocidad de compilación en **Rust** (`cargo release`), la sincronización de archivos y el desglose de métricas con tiempos por paso.
+### 1. Command Console (CLI Terminal)
+Displays direct execution of the tool on **Arch Linux**, highlighting compilation speed in **Rust** (`cargo release`), file synchronization, and metric breakdowns with step-by-step timing.
 
 <p align="center">
-  <img src="terminal.png" alt="TaskFlow CLI - Ejecución en Terminal Arch Linux" width="100%">
+  <img src="terminal.png" alt="TaskFlow CLI - Execution in Arch Linux Terminal" width="100%">
 </p>
 
 ---
 
-### 2. Dashboard de Reportes y Mantenimiento
-Vista explicativa del panel de control de eventos, mostrando el estado de sincronización de entornos (`staging -> prod`), la verificación de integridad mediante suma de comprobación SHA-256 y el histórico de ejecuciones.
+### 2. Maintenance & Event Dashboard
+Explanatory view of the event control panel, showing environment sync status (`staging -> prod`), SHA-256 checksum integrity verification, and execution history.
 
 <p align="center">
-  <img src="dashboard-eventos.png" alt="TaskFlow CLI - Registro de Eventos y Entornos" width="100%">
+  <img src="dashboard-eventos.png" alt="TaskFlow CLI - Event Log and Environments" width="100%">
 </p>
 
 ---
 
-### 3. Reporte de Despliegues y Métrica Temporal
-Análisis gráfico del pipeline completado en **1.42s sin errores**, desglosando la duración por etapas (variables de entorno, conectividad, build en Rust, respaldos y sincronización).
+### 3. Deployment Report & Time Metrics
+Graphical analysis of the pipeline completed in **1.42s with zero errors**, breaking down stage durations (environment variables, connectivity, Rust build, backups, and sync).
 
 <p align="center">
-  <img src="dashboard-despliegue.png" alt="TaskFlow CLI - Reporte General de Despliegue" width="100%">
+  <img src="dashboard-despliegue.png" alt="TaskFlow CLI - General Deployment Report" width="100%">
 </p>
 
 ---
 
-## 🛠️ Stack Tecnológico
+## 🛠️ Tech Stack
 <p align="left">
   <img src="https://skillicons.dev/icons?i=py,bash,rust,nodejs" alt="Tech Stack" />
 </p>
 
-- **Lenguajes:** Python, Bash, Rust, Node.js
-- **Entorno:** CLI (Command Line Interface), Linux / POSIX Shells
-- **Automatización:** Pipelines de scripting y gestión de procesos del sistema
+- **Languages:** Python, Bash, Rust, Node.js
+- **Environment:** CLI (Command Line Interface), Linux / POSIX Shells
+- **Automation:** Scripting pipelines and system process management
 
 ---
 
-## 🚀 Características Principales
+## 🚀 Key Features
 
-### 1. Automatización de Flujos (Workflows)
-- Ejecución secuencial y en paralelo de tareas de preparación de proyectos.
-- Normalización de entornos y scripts reutilizables.
+### 1. Workflow Automation
+- Sequential and parallel execution of project setup tasks.
+- Environment standardization and reusable scripts.
 
-### 2. Sincronización y Mantenimiento
-- Respaldos automatizados de archivos de configuración e índices.
-- Verificación de integridad y limpieza de temporales.
-
-
+### 2. Synchronization & Maintenance
+- Automated backups of configuration files and indices.
+- Integrity verification and temporary file cleanup.
